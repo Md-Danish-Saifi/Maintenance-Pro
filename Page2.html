@@ -1,0 +1,289 @@
+﻿p<html>
+<head>
+    <title>page2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="licss/licss.css" />
+    <link rel="stylesheet" type="text/css" href="licss/contact.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body onscroll="closeNav()">
+
+    <div id="mySidebar" class="sidebar" onclick="closeNav()">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="w3-btn footer" onclick="CloseNav()">User Profile</a><br /><br />
+        <label>Name</label><br /><br />
+        <label>E-mail</label><br /><br />
+        <label>Contact</label>
+    </div>
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "50%";//to change the width of sidebar change 500px to more
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+
+    <style>
+        .footer {
+            background-color: black;
+            text-align: center;
+            font-face: Consolas;
+            font-size: 20px;
+            text-decoration-color: black;
+            color: white;
+        }
+    </style>
+    <!---for contac us -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style inputs */
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            border-radius: 5px 5px;
+            box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.9);
+        }
+
+        input[type=submit] {
+            background-color: transparent;
+            color: white;
+            padding: 12px 20px;
+            border: solid;
+            cursor: pointer;
+            border-radius: 5px 5px;
+        }
+
+            input[type=submit]:hover {
+                background-color: #71e932;
+                border: solid;
+                border-color: #71e932;
+                color: white;
+            }
+
+        /* Style the container/contact section */
+        .container {
+            border-radius: 5px;
+            background-color: transparent;
+            padding: 10px;
+            width: 100%;
+        }
+
+        /* Create two columns that float next to eachother */
+        .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        img {
+            border-radius: 125px 125px;
+            border-color: transparent;
+            box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.7);
+        }
+
+        h5 {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Float four columns side by side */
+        .col {
+            float: left;
+            width: 33%;
+            padding:0 10px 0 20px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .ro {
+            margin: 0 -5px;
+        }
+
+            /* Clear floats after the columns */
+            .ro:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+            .col {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Style the counter cards */
+        .card {
+            box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.7);
+            padding: 16px;
+            text-align: center;
+            background-color:rgba(0, 0, 0, 0.3);
+            border-radius:15px 15px;
+        }
+    </style>
+
+
+
+
+    <nav class="navbar navbar-inverse w3-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand w3-btn" href="#"> <font color="white"><img src="mt1.gif" style="height:40" width="40" />Welcome to Maintinance<sup>Pro</sup></font></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Page1.html">Service</a></li>
+                <li class="active"><a href="#page2">Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="openbtn" onclick="openNav()"><span class="glyphicon glyphicon-user"></span></a></li>
+                <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="bg-layer">
+            <div onclick="closeNav()">
+                <br><center>
+                    <h1>For More Informaion Contact Us</h1>
+                    <h5>Swing by for a cup of coffee, or leave us a message:</h5>
+                </center>
+            </div>
+
+            <div class="container" onclick="closeNav()">
+
+                <div class="row">
+                    <div class="column">
+                        <label>Click on image to Locate geographical position</label>
+                        <a href="https://www.google.co.in/maps/@28.672979,77.4944283,369m/data=!3m1!1e3"><img src="c.png" style="width:99%;border-radius:10px 10px;"></a><br>
+                        <h2 style="color:white;">We will help you to resolve your renovation related problem and we don't require the money through the online gateway we’ll charge you on work done  </h2>
+
+                    </div>
+
+                    <div class="column">
+                        <form action="/action_page.php">
+                            <label for="fname">Region</label>
+                            <input type="text" id="fname" name="rg" placeholder="Region..............">
+                            <label for="lname">Pin Code</label>
+                            <input type="text" id="lname" name="pc" placeholder="Pin Code..">
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="australia">Select.....</option>
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="canada">Germany</option>
+                                <option value="canada">India</option>
+                                <option value="canada">Japan</option>
+                                <option value="canada">Russia</option>
+                                <option value="canada">Sweden</option>
+                                <option value="canada">UAE</option>
+                                <option value="canada">United Kingdom</option>
+                                <option value="usa">USA</option>
+                                <option value="canada">Yaman</option>
+                            </select>
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="background-color:black; padding-top:10px;padding-bottom:10px;"><h1> The Teammate</h1></div><br /><br /><br />
+
+            <div class="ro">
+                <div class="col">
+                    <div class="card">
+                        <img src="d'S3.jpg" width="250" class="zoom">
+                        <h1>DANISH</h1>
+                        <label>MCA 4<sup>th</sup> sem</label><br />
+                        <label>Web Designer</label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="sm.JPG" width="250"class="zoom">
+                        <h1>FARHAN</h1>
+                        <label>MCA 4<sup>th</sup> sem</label><br />
+                        <label>Web Designer</label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="a.png" width="250"class="zoom">
+                        <h1>IMRAN</h1>
+                        <label>MCA 4<sup>th</sup> sem</label><br />
+                        <label>Web Designer</label>
+</div>
+                </div>
+            </div>
+            <br />
+        </div>
+    </div>
+
+    
+
+    
+    <div class="footer">
+        all fraud rights reserved @Maintinance<sup>pro</sup> ISO 9001-2002
+    </div>
+
+</body>
+</html>
+
+

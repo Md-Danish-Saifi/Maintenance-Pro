@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>progressbar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="licss/licss.css" />
+
+<style>
+  
+    - /*-- slide --*/
+    @keyframes slideleft {
+        from
+
+    {
+        background-position: 0%;
+    }
+
+    to {
+        background-position: 90000%;
+    }
+
+    }
+
+    @-webkit-keyframes slideleft {
+        from {
+            background-position: 0%;
+        }
+
+        to {
+            background-position: 90000%;
+        }
+    }
+    .bg{
+        /* The image used */
+        background-image: url("/mini pro/images/os.jpg");
+        /* Full height */
+        background-repeat: repeat-x;
+        animation: slideleft 20000s infinite linear;
+        -webkit-animation: slideleft 20000s infinite linear;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        min-height: 100vh;
+    }
+    .bg:hover {
+        /* The image used */
+        background-image: url("/mini pro/images/hr1.jpg");
+        /* Full height */
+        background-repeat: repeat-x;
+        animation: slideleft 20000s infinite linear;
+        -webkit-animation: slideleft 20000s infinite linear;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        min-height: 100vh;
+    }
+    .bg-layer {
+        background: rgba(0, 0, 0, 0.5);
+        min-height: 100vh;
+    }
+    .txt {
+        padding-top: 1em;
+        font-size: 32px;
+        text-align: left;
+        color: white;
+        padding-left: 10px;
+    }
+    .txt:hover
+    {
+        text-shadow:0px 0px 20px black;
+        
+    }
+</style></head>
+
+<body onload="move()">
+    <div class="bg">
+        <div class="bg-layer">        
+            <div style="height:25vh; background: rgba(0, 0, 0, 0.5);padding-top:10px;" class="zoom">
+                <center>
+                    <h1 style="font-size:65px; color:white" class="zoom">
+                        <img src="/mini pro/mt1.gif" style="height:70" width="70" /> Maintinance<sup>Pro </sup><img src="/mini pro/mt1.gif" style="height:70" width="70" />
+                    </h1> </center>
+            </div>
+                <div class="w3-card w3-round-large txt" style="width:100%" >
+                    <h1>Thank you for Signing Up</h1>
+                    <h4>You Are Being Loading</h4><br />
+                </div>        
+                    <center><br />
+              <div class="w3-container" style="align-content:center">               
+                    <div class="w3-light-grey w3-round" style="width:25%" align="left">
+                    <div id="myBar" class="w3-container w3-black w3-center w3-round" style="width:0%">0%</div>
+                    </div>
+                
+              </div>
+            </center>
+
+        </div>
+    </div>
+
+    <script>
+        function move() {
+            var elem = document.getElementById("myBar");
+            var width = 0;
+            var id = setInterval(frame, 70);
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);s
+                }
+                else {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width * 1 + '%';
+                }
+                if (width == 100) { location.replace("/mini pro/index.html") }
+            }
+        }
+
+
+    </script>
+
+</body>
+</html> 

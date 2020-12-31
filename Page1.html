@@ -1,0 +1,289 @@
+﻿<html>
+<head>
+    <title>page1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet"type="text/css"href="licss/licss.css" />
+    <link rel="stylesheet"type="text/css"href="licss/service.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style>
+        /*stickey image*/
+    div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+   .container
+    
+    {
+        border-radius: 5px;
+        background-color: transparent;
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* Create two columns that float next to eachother */
+    .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+        
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    
+    }
+
+    </style>
+
+</head>
+<body style="background-color:white;" onscroll="closeNav()">
+
+    <video controls width="100%" height="300">
+
+        <source src="/mini pro/g.mp4"
+                type="video/webm">
+    </video>
+
+
+
+
+
+
+
+
+    <div class="w3-top">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand w3-btn" href="#"> <font color="white"><img src="mt1.gif" style="height:40" width="40" />Welcome to Maintinance<sup>Pro</sup></font></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="active"><a href="#page1">Service</a></li>
+                    <li><a href="Page2.html">Contact Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="openbtn" onclick="openNav()"><span class="glyphicon glyphicon-user"></span></a></li>
+                    <li><a href="/mini pro/logout.php"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+
+    <div id="mySidebar" class="sidebar" onclick="closeNav()">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#" class="w3-btn footer" onclick="loseNav()">User Profile</a><br /><br />
+        <a href="#">Name</a><br />
+        <a href="#">E-mail</a><br />
+        <a href="#">Contact</a>
+    </div>
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "50%";//to change the width of sidebar change 500px to more
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+
+
+    <div class="os" onclick="closeNav()">
+        <div class="bg">
+            <div>
+                <marquee scrollamount="7" direction="down" behavior="slide">
+                    <h1> HOW WE WORKS</h1>
+                </marquee>
+                <h3> can book a call for AC Servicing or any other home repair service requirement right from your home. It's quite easy and here's how it works</h3>
+            </div>
+
+
+            <center>
+                <divi>
+                    <label class="zoom">
+                        <marquee scrollamount="7" direction="up" behavior="slide">
+                            <b>Say you need a Serviceman<br> for your home</b><br>
+                            You book a call on our website<br> or customer care number
+                        </marquee>
+                    </label>
+
+                    <label class="zoom">
+                        <marquee scrollamount="10" direction="right" behavior="slide">
+                            <b>We have a list of verified <br> Servicemen</b><br>
+                            These are trained, verified and<br> trustworthy guys
+                        </marquee>
+                    </label>
+
+                    <label class="zoom">
+                        <marquee scrollamount="10" direction="left" behavior="slide">
+                            The best situated Serviceman is<br> assigned for you</br>
+                            To address your requirement &<br> meet the 2 hours TAT
+                        </marquee>
+                    </label>
+
+                    <label class="zoom">
+                        <marquee scrollamount="7" direction="down" behavior="slide">
+                            <b>
+                                EasyFix resolves all your home<br>repair issues</br>
+                                The call is closed after your<br>complete satisfaction
+                        </marquee>
+                    </label>
+
+                </divi>
+        </div>
+    </div>
+  
+
+
+
+    
+        <div style="min-height:80vh;"onclick="closeNav()">
+            <center>
+                <hr color="black" width="100%" style="height:30" />
+                <hr color="black" width="100%" style="height:3" />
+                <p class="head"><b>Our services</b></p>
+                <label><img class="img-responsive  zoom" src="mi2.png" width="120" height="100" vspace="5" hspace="80"><br><a href="#housing"><button>Housing</button></a></label>
+                <label><img class="img-responsive zoom" src="mi3.png" width="120" height="100" vspace="5" hspace="80"><br><a href="#plumber"><button>Plumber</button></a></label>
+                <label><img class="img-responsive zoom" src="mi4.png" width="120" height="100" vspace="5" hspace="80"><br><a href="#painter"><button>Painter</button></a></label>
+                <br />
+                <label><img class="img-responsive zoom" src="mi5.png" width="120" height="100" vspace="5" hspace="80"><br><a href="#mason"><button>Mason</button></a></label>
+                <label><img class="img-responsive zoom" src="mi6.png" width="130" height="100" vspace="5" hspace="80"><br><a href="#carpenter"><button>Carpenters</button></a></label>
+                <label><img class="img-responsive zoom" src="el.png" width="120" height="100" vspace="5" hspace="80"><br><a href="#elec"><button>Electrician</button></a></label>
+                <hr color="black" width="100%" style="height:3" />
+                <hr color="black" width="100%" style="height:30" />
+            </center>
+        </div>
+   
+ 
+    
+        <div class="container">
+            <div class="row">                
+                <div id="housing">
+                   
+                        <div style="background-color:black;height:40px;"><label style="color:white;margin:5px 0px 5px 0px;width:50%" ;>Housing</label></div>
+                        <div class="house">
+                            
+                                <div class="bg"><marquee scrollamount="100" direction="up" behavior="slide">
+                                    <h1 class="zoom">"Update your Old house in new one"</h1>
+                                    <h6 class="zoom">
+                                        Keeping your home properly maintained
+                                        will not only save you money by increasing the longevity of your appliances and existing structures, but it will also<br>
+                                        help you become more energy-efficient and save money on your utility bills. These tips merely scratch the
+                                        surface <br>of the things you can do around your home to keep everything running in tiptop shape.
+                                    </h6></marquee>
+                                </div>
+                            
+                        </div>
+                </div>
+
+
+                <div id="plumber">
+                    <div  style="background-color:black;height:40px;"><label style="color:white;margin:5px 0px 5px 0px;width:50%">Plumber</label></div>
+                    <div class="plumber">
+                        <div class="bg">
+                            <h1 class="zoom">"Get resolved your water leakage"</h1>
+                            <h6 class="zoom">
+                                Water leaking from your water tank/pipes will not only cost you money when it comes to your utility bill, but it can also cause water damage to your bathroom floor
+                                and premature wear of your pipe's internal workings.if find out whether your water tank/pipe is leaking, just maka a call and get resolved sooner at the lowest cost and better service
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div id="painter" style="background-color:black;height:40px;"><label style="color:white;margin:5px 0px 5px 0px;">Painter</label></div>
+                <div class="painter">
+                    <div class="bg">
+                        <h1 class="zoom">"Get your ideas on the wall" </h1>
+                        <h6>
+                            Whitewash for walls can be lime or paint-based, and can be applied to brick, concrete, and other wall surfaces. You can change the pigment of your whitewash for a custom look.
+                            Each change in the mixture should be tested, however, before you apply it to an entire wall.
+                            Pigments change when they become completely dry so be sure you are happy with the test sample or you may have undesirable final results.
+                        </h6>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div id="mason" style="background-color:black;height:40px;"><label style="color:white;margin:5px 0px 5px 0px;">Mason</label></div>
+                    <div class="meson">
+                        <div class="bg">
+                            <h1 class="zoom">"Get your dream home cunstructed/redsigned"</h1>
+                            <h6 class="zoom">
+                                Low Cost Housing is a concept that deals with operative planning and techniques which reduces the cost effectively, thus making it affordable by many.
+                                The basic idea behind this concept is the use of locally available materials, efficient skilled workhands, and technology without giving up on the strength,
+                                quality, and performance of the structure. It is often believed that there is a consumption of cheap raw materials in the construction of such projects,
+                                but it is the proper management of resources that leads to the efficacy of low cost housing projects
+                            </h6>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="carpenter" style="background-color:black;height:40px;"><label style="color:white;margin:5px 0px 5px 0px;">Carpenter</label></div>
+                    <div class="carp">
+                        <div class="bg">
+                            <h1 class="zoom">"Upgrade your furniture"</h1>
+                            <h6 class="zoom">
+                                Low Cost Housing is a concept that deals with operative planning and techniques which reduces the cost effectively, thus making it affordable by many.
+                                The basic idea behind this concept is the use of locally available materials, efficient skilled workhands, and technology without giving up on the strength,
+                                quality, and performance of the structure. It is often believed that there is a consumption of cheap raw materials in the construction of such projects,
+                                but it is the proper management of resources that leads to the efficacy of low cost housing projects
+
+                            </h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div id="elec" style="background-color:black;height:40px;"><label style="color:white;margin:5px 0px 5px 0px;">Carpenter</label></div>
+                <div class="elec">
+                    <div class="bg">
+                        <h1 class="zoom">"fix-up the connnections"</h1>
+                        <h6 class="zoom">
+                            One of the most important strategies for avoiding electrical injuries is to always entrust electrical work to qualified, 
+                            licensed professionals. It only takes a split second to receive a life-threatening electrical shock. Unless you are experienced and knowledgeable in electrical repairs,
+                            take the wisest course and contact your electrical services provider.Arcing faults in electrical wiring are responsible for more than half of electric-caused house fires 
+                            reported in the U.S. each year. You can prevent such a disaster from happening in your home by having your electrician conduct a thorough annual inspection of your electrical system. 
+                            He or she may recommend upgrades to bring your wiring up to current NEC requirements or identify problem areas requiring immediate attention.
+
+                        </h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+ <div class="footer">all fraud rights reserved @Maintinance<sup> pro</sup> ISO 9001-2002</div>
+</body>
+</html >
+    
